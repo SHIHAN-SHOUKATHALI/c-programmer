@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, i = 1,total_sum = 0,current_sum = 0;
+
+ 
+    printf("Enter a positive integer n: ");
+    scanf("%d", &n);
+
+   
+    while (i <= n) 
+    {
+        current_sum += i;    
+        total_sum += current_sum; 
+        i++;                 
+    }
+
+  
+    printf("The sum is: %d\n", total_sum);
+
+    return 0;
+}
